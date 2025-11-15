@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [],
+    domains: [],
+  },
+  experimental: {
+    serverComponentsExternalPackages: ["fs"],
+  },
 };
 
 export default nextConfig;
