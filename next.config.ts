@@ -5,9 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [],
     domains: [],
   },
-  experimental: {
-    serverComponentsExternalPackages: ["fs"],
-  },
+  serverExternalPackages: ["fs"],
 };
 
 export default nextConfig;
